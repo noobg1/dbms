@@ -1,0 +1,34 @@
+{% extends "material_layout.html" %}
+{% block content %}
+<div>
+<ul>
+<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+<thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">Material</th>
+      <th>Quantity</th>
+      <th>Unit price</th>
+    </tr>
+</thead>
+<tbody>
+{% for key in datas  %}
+<tr>
+{% for val in key  %}
+    <td class="mdl-data-table__cell--non-numeric">
+    {% if val is string %}
+        {{ val }}
+   		{% endif %}
+       
+    </td>
+    
+{% endfor %}
+</tr>
+<br>
+{% endfor %}
+</tbody>
+</table>
+</ul>
+</div>
+
+{% endblock %}
+
