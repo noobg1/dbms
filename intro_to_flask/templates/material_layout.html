@@ -155,6 +155,7 @@
           <a class="mdl-navigation__link" href="{{ url_for('index') }}"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help</i>Index</a>
           {% if 'email' in session %}
           <a class="mdl-navigation__link" href="{{ url_for('profile') }}"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Profile</a>
+          <a class="mdl-navigation__link" href="{{ url_for('fill') }}"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Add new</a>
           <a class="mdl-navigation__link" href="{{ url_for('signout') }}"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Signout</a>
           {% else %}
           <a class="mdl-navigation__link" href="{{ url_for('signup') }}"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Sign Up</a>          
